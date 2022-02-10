@@ -69,7 +69,7 @@ COPY misc/tor/torrc /etc/tor/torrc
 COPY misc/tor/start-tor.sh misc/tor/start-tor.sh
 COPY app/ app/
 COPY run .
-#COPY whoogle.env .
+COPY whoogle.env .
 
 # Create user/group to run as
 RUN adduser -D -g $DOCKER_USERID -u $DOCKER_USERID $DOCKER_USER
